@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    --og: #B1B1B1;
+    --html-background: #b74096;
+    --btn-bg: #fff8f0;
+    --lpink: #f57ad2;
+    --dpink: #8f0a69;
+    --white: #ffff;
+    --grey: #808080;
+    --wh-bg: #B1B1B1;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    color: var(--og);
+}
+
+html {
+    background-color: var(--html-background);
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-button {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--btn-bg);
+}
+
+.c-button:hover {
+    box-shadow: 0rem 0.5rem 0.7rem var(--lpink);
+    transform: translateY(-0.5rem);
+}
+
+.c-button:active {
+    box-shadow: 0rem 0.4rem 0.6rem var(--dpink);
+    transform: translateY(-0.2rem);
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    background-color: var(--html-background);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.m-content {
+    width: 50%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    transform: translateY(-5rem);
+    transition: all 0.5s;
+    background-color: var(--white);
+}
+
+.m-content h3 {
+    color: var(--grey);
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.m-content > * {
+    margin: 0 1rem;
+}
+
+.m-content > input {
+    height: 1.5rem;
+    border: none;
+    border-bottom: 1px solid var(--wh-bg);
+    font-size: 0.7rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.m-placeholder {
+    font-size: 0.6rem;
+    color: var(--grey);
+}
+
+.m-forgot {
+    font-size: 0.6rem;
+    align-self: center;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+}
+
+.m-forgot:hover {
+    color: var(--grey);
+    cursor: pointer;
+}
+
+.m-button {
+    background-color: var(--dpink);
+    justify-self: center;
+    margin-bottom: 1rem;
+    border-radius: 10rem;
+    padding: 0.5rem 0.8rem;
+    color: var(--white);
+    box-shadow: 0 0.4rem 1rem rgba(158, 158, 158, 0.6);
+}
+
+.m-button:hover {
+    box-shadow: 0 0.4rem 0.6rem rgba(158, 158, 158, 0.9);
+}
+
+.m-button:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0 0.4rem 0.4rem var(--dpink);
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.position {
+    transform: translateY(0);
+}
