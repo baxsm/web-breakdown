@@ -37,6 +37,9 @@
         <li>
             <a href="./login-modal/index.html">Login Modal</a>
         </li>
+        <li>
+            <a href="./animated-swipe-button/index.html">Animated Swipe Button</a>
+        </li>
     </ul>
 
     <!--footer-->
