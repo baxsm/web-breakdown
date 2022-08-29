@@ -40,6 +40,9 @@
         <li>
             <a href="./animated-swipe-button/index.html">Animated Swipe Button</a>
         </li>
+        <li>
+            <a href="./sliding-animated-card/index.html">Sliding Animated Card</a>
+        </li>
     </ul>
 
     <!--footer-->
