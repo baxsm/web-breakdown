@@ -43,6 +43,9 @@
         <li>
             <a href="./sliding-animated-card/index.html">Sliding Animated Card</a>
         </li>
+	<li>
+            <a href="./range-slider/index.html">Range Slider</a>
+        </li>
     </ul>
 
     <!--footer-->
